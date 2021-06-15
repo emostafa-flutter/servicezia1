@@ -1,0 +1,25 @@
+Column(
+      children: [
+        Expanded(
+          child: Container(
+            margin: EdgeInsets.all(32),
+            child: Image.asset(
+              slide.image,
+              fit: BoxFit.contain,
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 70),
+          child: Text(
+            slide.title,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 28,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        SizedBox(height: 230,),
+      ],
+    );
