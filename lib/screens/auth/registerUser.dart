@@ -128,13 +128,8 @@ class RegisterUser extends StatelessWidget {
   }
 
   SendDataRegisterUserApi() async{
-    print(
-        '-----------------------------------------------------------------------------------------------');
-    print(NameController.text);
-    print(PhoneController.text);
-
     http.Response res = await  http.post(
-      Uri.parse('http://192.168.1.7/craftsmen/api/create-account.php'),
+      Uri.parse('http://192.168.1.200/craftsmen/api/create-account.php'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },
@@ -144,8 +139,9 @@ class RegisterUser extends StatelessWidget {
         'password': PasswordController.text,
         'phone': PhoneController.text,
         'city': LocationController.text,
-      }),
+      },),
     );
+        print('-----------------------------------------------------------------------------------------------');
     print(res.body.toString());
   }
 }

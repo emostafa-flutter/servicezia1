@@ -1,10 +1,9 @@
-import 'package:firstapp/screens/auth/registerProvider.dart';
 import 'package:firstapp/screens/config.dart';
 import 'package:flutter/material.dart';
-import 'package:firstapp/screens/auth/registerUser.dart';
 
 
 class RegisterNewAcc extends StatefulWidget {
+  static const String REGISTER_MAIN_SCREEN = "registerMainScreen";
   @override
   _RegisterNewAccState createState() => _RegisterNewAccState();
 }

@@ -1,3 +1,4 @@
+import 'package:firstapp/mainPage/mianPageScreen.dart';
 import 'package:firstapp/screens/auth/registerMain.dart';
 import 'package:firstapp/screens/auth/registerProvider.dart';
 import 'package:firstapp/screens/auth/registerUser.dart';
@@ -24,10 +25,14 @@ class MyApp extends StatelessWidget {
       routes: {
         'login': (context) => AuthScreen(),
         'tips': (context) => Tips(),
-        'register': (context) => RegisterNewAcc(),
+        RegisterNewAcc.REGISTER_MAIN_SCREEN: (context) => RegisterNewAcc(),
         'registerUser': (context) => RegisterUser(),
         'registerProvider': (context) => RegisterProvider(),
+
       },
+
     );
+
   }
+
 }
